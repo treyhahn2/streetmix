@@ -1,6 +1,6 @@
 module.exports = {
-  app_host_port: 'www.trilingualstreetmixles.herokuapp.com/',
-  header_host_port: 'www.trilingualstreetmixles.herokuapp.com/',
+  app_host_port: 'www.testing123les.herokuapp.com/',
+  header_host_port: 'www.testing123les.herokuapp.com/',
   restapi: {
     baseuri: '/api'
   },
