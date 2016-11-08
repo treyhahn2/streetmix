@@ -128,21 +128,21 @@ export default class MenuBar extends React.Component {
               <span className='user-id'>{userId}</span>
             </button>
           </li>
-          /*<li id='sign-in-menu-item' style={signInVisibilityStyle}>
-            <a href={`/${URL_SIGN_IN_REDIRECT}`} className='command' data-i18n='menu.item.sign-in'>
-              Sign in
-            </a>
-          </li>*/
+          //<li id='sign-in-menu-item' style={signInVisibilityStyle}>
+           // <a href={`/${URL_SIGN_IN_REDIRECT}`} className='command' data-i18n='menu.item.sign-in'>
+             // Sign in
+          //  </a>
+         // </li>
           <li>
             <a href='/new' target='_blank' data-i18n='menu.item.new-street'>
               New street
             </a>
           </li>
-          /*<li id='gallery-link'>
-            <a href={myStreetsLink} data-i18n='menu.item.my-streets' onClick={onMyStreetsClick}>
-              My streets
-            </a>
-          </li>*/
+          //<li id='gallery-link'>
+         //   <a href={myStreetsLink} data-i18n='menu.item.my-streets' onClick={onMyStreetsClick}>
+           //   My streets
+         //   </a>
+        //  </li>
           {SettingsButton}
           <li id='share-menu-item'>
             <button
