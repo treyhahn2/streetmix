@@ -71,7 +71,7 @@ export default class MenuBar extends React.Component {
       ? (<li id='settings-menu-item'>
         <button
           data-name='settings'
-          data-i18n='menu.item.language'
+          data-i18n='menu.item.settings'
           className='menu-attached'
           disabled={false}
           onClick={this.onClickMenuButton}
