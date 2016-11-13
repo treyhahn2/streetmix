@@ -71,12 +71,12 @@ export default class MenuBar extends React.Component {
       ? (<li id='settings-menu-item'>
         <button
           data-name='settings'
-          data-i18n='menu.item.settings'
+          data-i18n='menu.item.language'
           className='menu-attached'
           disabled={false}
           onClick={this.onClickMenuButton}
         >
-          Settings
+          Languages
         </button>
       </li>) : null
 
