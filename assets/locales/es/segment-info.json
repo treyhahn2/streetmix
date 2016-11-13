@@ -75,7 +75,7 @@
       }
     },
     "bike-lane": {
-      "name": "Bike lane",
+      "name": "Carril de Bicicletas",
       "description": {
         "prompt": "Learn more about bike lanes",
         "lede": "Bike lanes help keep bicyclists safe in a separate lane from cars.",
