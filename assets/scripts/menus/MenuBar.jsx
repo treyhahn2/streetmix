@@ -67,7 +67,7 @@ export default class MenuBar extends React.Component {
     const signInVisibilityStyle = userId
       ? { display: 'none' } : {}
 
-    const SettingsButton = (debug.experimental)
+    const SettingsButton = (true)
       ? (<li id='settings-menu-item'>
         <button
           data-name='settings'
