@@ -1,5 +1,5 @@
 import { hideLoadingScreen, getImagesToBeLoaded } from './load_resources'
-import { initLocale } from './locale'
+import { initLocale, setLocale, getLocale } from './locale'
 import { scheduleNextLiveUpdateCheck } from './live_update'
 import { showGallery, attachGalleryViewEventListeners } from '../gallery/view'
 import { app } from '../preinit/app_settings'
@@ -163,7 +163,8 @@ function onEverythingLoaded () {
   updateStreetName()
   createDomFromData()
   segmentsChanged()
-
+  setLocale(getLocale())
+  
   initializing = false
   setIgnoreStreetChanges(false)
   setLastStreet(trimStreetData(getStreet()))
