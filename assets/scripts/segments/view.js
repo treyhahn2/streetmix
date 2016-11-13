@@ -24,6 +24,7 @@ import {
   applyWarningsToSegments
 } from './resizing'
 import { getVariantArray, getVariantString } from './variant_utils'
+import { setLocale, getLocale } from '../app/locale'
 
 const TILESET_POINT_PER_PIXEL = 2.0
 export const TILE_SIZE = 12 // pixels
@@ -613,6 +614,7 @@ export function segmentsChanged () {
   saveStreetToServerIfNecessary()
   updateUndoButtons()
   repositionSegments()
+  setLocale(getLocale())
 }
 
 function onSegmentMouseEnter (event) {
