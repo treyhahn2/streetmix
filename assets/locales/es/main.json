@@ -31,7 +31,8 @@
       "twitter": "Envía un tweet a @streetmix",
       "email": "Envia un correo electronico al Equipo de Streetmix",
       "github": "Ver/comentar en GitHub:",
-      "blog": "Visita el blog de Streetmix"
+      "blog": "Visita el blog de Streetmix",
+      "slack": "Participa en Slack chat"
     },
     "feedback": {
       "prompt": "Envianos un mensaje:",
