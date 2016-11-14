@@ -9,7 +9,7 @@ import i18nextXhr from 'i18next-xhr-backend'
 import { API_URL } from './config'
 
 // Default language is set by browser, or is English if undetermined
-const defaultLocale = navigator.language || 'en'
+let defaultLocale = navigator.language || 'en'
 
 export function initLocale () {
  // Current language is the one set by Streetmix or is the browser default, if unset
