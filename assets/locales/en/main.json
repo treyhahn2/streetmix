@@ -29,7 +29,7 @@
     "contact": {
       "forums": "Discuss on the forums",
       "twitter": "Send a tweet to @streetmix",
-      "email": "Send an email to Streetmix team",
+      //"email": "Send an email to Streetmix team",
       "github": "View source code on GitHub",
       "blog": "Visit Streetmix blog",
       "slack": "Join Slack chat"
@@ -184,12 +184,12 @@
       "en@pirate": "English (Pirate)",
       "fi": "Finnish",
       "de": "German",
-      "es": "Spanish",
+      "es": "Español",
       "es-mx": "Spanish (Mexico)",
       "pl": "Polish",
       "pt-br": "Portuguese (Brazil)",
       "sv": "Swedish",
-      "zh-hant": "Chinese (Traditional)"
+      "zh-hant": "中文 (Chinese-Traditional)"
     }
   }
 }

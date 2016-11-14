@@ -151,10 +151,11 @@
       "en@pirate": "English (Pirate)",
       "fi": "Finnish",
       "de": "German",
-      "es": "Spanish",
+      "es": "Español",
       "es-mx": "Spanish (Mexico)",
       "pl": "Polish",
-      "pt-br": "Portuguese (Brazil)"
+      "pt-br": "Portuguese (Brazil)",
+        "zh-hant": "中文"
     }
   }
 }
