@@ -25,12 +25,12 @@ export default class SettingsMenu extends React.PureComponent {
           <p><span data-i18n='menu.language.heading'>Language</span></p>
           <p>
             <select onChange={onNewLocaleSelected} ref={(ref) => { this.localeSelect = ref }}>
-              <option value='zh-Hant' data-i18n='i18n.lang.zh-hant'>中文 (Chinese-Traditional)</option>
+              <option value='zh-Hant' data-i18n='i18n.lang.zh-hant'>Chinese (Traditional)</option>
               <option value='en' data-i18n='i18n.lang.en'>English</option>
-              {/* <option value='en@pirate' data-i18n='i18n.lang.en@pirate'>English (Pirate)</option> */}
-              {/*<option value='fi' data-i18n='i18n.lang.fi'>Finnish</option>
+              {/* <option value='en@pirate' data-i18n='i18n.lang.en@pirate'>English (Pirate)</option> 
+              <option value='fi' data-i18n='i18n.lang.fi'>Finnish</option>
               <option value='de' data-i18n='i18n.lang.de'>German</option>*/}
-              <option value='es' data-i18n='i18n.lang.es'>Español (Spanish)</option>
+              <option value='es' data-i18n='i18n.lang.es'>Spanish</option>
               {/*<option value='es_MX' data-i18n='i18n.lang.es-mx'>Spanish (Mexico)</option>
               <option value='pl' data-i18n='i18n.lang.pl'>Polish</option>
               <option value='pt_BR' data-i18n='i18n.lang.pt-br'>Portuguese (Brazil)</option>*/}
