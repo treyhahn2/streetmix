@@ -12,9 +12,17 @@ import { API_URL } from './config'
 const defaultLocale = navigator.language || 'en'
 
 export function initLocale () {
-  // Current language is the one set by Streetmix or is the browser default, if unset
-  const locale = getLocale()
-  doTheI18n(locale)
+ // Current language is the one set by Streetmix or is the browser default, if unset
+ const locale = getLocale()
+
+ if (window.location.search.match(/[\?&]lang-es&?/)) {
+   locale = 'es'
+ }
+ if (window.location.search.match(/[\?&]lang-chinese&?/)) {
+   locale = 'zh-Hant'
+ }
+
+ doTheI18n(locale)
 }
 
 export function onNewLocaleSelected (event) {
