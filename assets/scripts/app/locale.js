@@ -42,8 +42,8 @@ export function clearLocale () {
 }
 
 function doTheI18n (locale) {
-  const options = {
-    lng: 'es',
+  let options = {
+    lng: 'locale',
     ns: ['main', 'segment-info'],
     defaultNS: 'main',
     fallbackLng: 'es',
@@ -77,7 +77,7 @@ function doTheI18n (locale) {
 }
 
 export function t (key, fallback, options) {
-  const text = i18next.t(key, options)
+  let text = i18next.t(key, options)
   if (!text || text === key) {
     return fallback
   } else {
