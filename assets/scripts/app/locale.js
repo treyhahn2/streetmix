@@ -20,6 +20,7 @@ if (window.location.search.match(/[\?&]lang-es&?/)) {
  if (window.location.search.match(/[\?&]lang-chinese&?/)) {
    locale = 'zh-Hant'
  }
+    else {locale = 'en'}
  doTheI18n(locale)
 }
 
@@ -46,7 +47,7 @@ function doTheI18n (locale) {
     lng: 'locale',
     ns: ['main', 'segment-info'],
     defaultNS: 'main',
-    fallbackLng: 'es',
+    fallbackLng: 'en',
     load: 'all',
     backend: {
       loadPath: API_URL + 'v1/translate/{{lng}}/{{ns}}'
@@ -57,9 +58,9 @@ function doTheI18n (locale) {
     if (err) {
       console.log(err)
     }
-    const els = document.querySelectorAll('[data-i18n]')
+    let els = document.querySelectorAll('[data-i18n]')
     for (let i = 0, j = els.length; i < j; i++) {
-      const key = els[i].getAttribute('data-i18n')
+      let key = els[i].getAttribute('data-i18n')
       let translation = ''
       for (let ns of options.ns) {
         translation = translation || t(key, {ns: options.ns[ns]})
