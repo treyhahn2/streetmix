@@ -14,7 +14,6 @@ let defaultLocale = navigator.language || 'en'
 export function initLocale () {
  // Current language is the one set by Streetmix or is the browser default, if unset
  let locale = getLocale()
- locale = 'en'
 if (window.location.search.match(/[\?&]lang-es&?/)) {
    locale = 'es'
  }
@@ -44,7 +43,7 @@ export function clearLocale () {
 
 function doTheI18n (locale) {
   const options = {
-    lng: locale,
+    lng: 'es',
     ns: ['main', 'segment-info'],
     defaultNS: 'main',
     fallbackLng: 'es',
