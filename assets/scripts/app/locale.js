@@ -14,13 +14,14 @@ let defaultLocale = navigator.language || 'en'
 export function initLocale () {
  // Current language is the one set by Streetmix or is the browser default, if unset
  let locale = getLocale()
-if (window.location.search.match(/[\?&]lang-es&?/)) {
+
+ if (window.location.search.match(/[\?&]lang-es&?/)) {
    locale = 'es'
  }
  if (window.location.search.match(/[\?&]lang-chinese&?/)) {
    locale = 'zh-Hant'
  }
-    else {locale = 'en'}
+
  doTheI18n(locale)
 }
 
@@ -43,8 +44,8 @@ export function clearLocale () {
 }
 
 function doTheI18n (locale) {
-  let options = {
-    lng: 'locale',
+  const options = {
+    lng: locale,
     ns: ['main', 'segment-info'],
     defaultNS: 'main',
     fallbackLng: 'en',
@@ -58,9 +59,9 @@ function doTheI18n (locale) {
     if (err) {
       console.log(err)
     }
-    let els = document.querySelectorAll('[data-i18n]')
+    const els = document.querySelectorAll('[data-i18n]')
     for (let i = 0, j = els.length; i < j; i++) {
-      let key = els[i].getAttribute('data-i18n')
+      const key = els[i].getAttribute('data-i18n')
       let translation = ''
       for (let ns of options.ns) {
         translation = translation || t(key, {ns: options.ns[ns]})
@@ -78,7 +79,7 @@ function doTheI18n (locale) {
 }
 
 export function t (key, fallback, options) {
-  let text = i18next.t(key, options)
+  const text = i18next.t(key, options)
   if (!text || text === key) {
     return fallback
   } else {
