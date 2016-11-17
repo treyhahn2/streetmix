@@ -614,12 +614,6 @@ export function segmentsChanged () {
   saveStreetToServerIfNecessary()
   updateUndoButtons()
   repositionSegments()
-  if (window.location.search.match(/[\?&]lang-es&?/)) {
-   locale = 'es'
- }
- if (window.location.search.match(/[\?&]lang-chinese&?/)) {
-   locale = 'zh-Hant'
- }
   setLocale(getLocale())
 }
 
