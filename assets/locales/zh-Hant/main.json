@@ -68,7 +68,7 @@
     },
     "dialogs": {
         "welcome": {
-            "heading": "Welcome to Streetmix.",
+            "heading": "Welcome to Streetmix Lower East Side!",
             "new": {
                 "intro": "Design, remix, and share your neighborhood street. Add trees or bike paths, widen sidewalks or traffic lanes, learn how your decisions can impact your community.",
                 "instruct": "Start by moving some segments around with <span class=\"touch-only\">your finger.</span> <span class=\"non-touch-only\">your mouse.</span>"

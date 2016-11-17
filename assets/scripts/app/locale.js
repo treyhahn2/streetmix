@@ -48,7 +48,7 @@ function doTheI18n (locale) {
     lng: locale,
     ns: ['main', 'segment-info'],
     defaultNS: 'main',
-    fallbackLng: 'en',
+    fallbackLng: 'es',
     load: 'all',
     backend: {
       loadPath: API_URL + 'v1/translate/{{lng}}/{{ns}}'
